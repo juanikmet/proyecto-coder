@@ -73,7 +73,7 @@ h1{
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 2.5%;
+    top: 5%;
     color: #FFFFFF;
     font-weight: 700;
 }
@@ -87,7 +87,12 @@ h1{
     width: 90%;
 }
 
-.hero-img{
+.video-div{
+    max-height: 680px;
+    overflow: hidden;
+}
+
+.hero-img, .hero-video{
     width: 100%;
 }
 
@@ -99,6 +104,10 @@ h1{
 .section-carousel{
     margin: 100px auto;
     max-width: 90%;
+}
+
+.section-item > img{
+    border-radius: 15px;
 }
 
 h2{
