@@ -40,13 +40,13 @@
             <h1>Hey Houston!</h1>
             <img src="../img/container-placeholder.png" alt="Texto alternativo de prueba" class="container-img">
             <div class="container-paragraph">
-                <p class="paragraph">Send me a message and let’s talk about your project and how we can make it launch
+                <p class="paragraph reverse-p">Send me a message and let’s talk about your project and how we can make it launch
                 </p>
             </div>
         </section>
 
-        <section class="position-relative section-item">
-            <form action='form.php' method="POST">
+        <section class="position-relative section-form">
+            <form action='form.php' method="POST" class="contact-form">
                 <!-- Input de nombre. El label se va a ocultar con css -->
                 <label>Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Your name">
@@ -61,7 +61,7 @@
                 </textarea>
 
                 <!-- Input de nombre. -->
-                <input type="submit" value="Send message">
+                <input type="submit" value="Send message" class="form-button">
             </form>
         </section>
     </main>

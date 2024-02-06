@@ -92,7 +92,7 @@ h1{
 }
 
 .section-item{
-    margin: 100px auto;
+    margin: 50px auto;
     max-width: 90%;
 }
 
@@ -177,6 +177,83 @@ h2{
     padding: 0;
 }
 
+.section-form{
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+.contact-form{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contact-form > label{
+    display: none;
+}
+
+.contact-form > input, .contact-form > textarea{
+    width: 100%;
+    text-align: left;
+    border: solid 1px #11151A;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #9A9A9A;
+}
+
+.contact-form > input:focus, .contact-form > textarea:focus{
+    background-color: #ffffff;
+    border: solid 1px #11151A !important;
+    outline: none;
+}
+
+.contact-form > .form-button{
+    padding: 0;
+    width: auto;
+    border: none;
+    border-radius: none;
+    background-color: #ffffff;
+    color: #389CD3;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.contact-form > .form-button:hover{
+    color: #225A7A;
+}
+
+.contact-form > .form-button:focus, .contact-form > .form-button:active{
+    border: none !important;
+}
+
+.contact-form > input::placeholder, .contact-form > textarea::placeholder{
+    color: #9A9A9A;
+}
+
+h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.sideb-carousel{
+    background-color: #ffffff !important;
+    width: 100%;
+    height: 100%;
+}
+
+.sideb-carousel > div{
+    width: 100%;
+    max-height: 100%;
+}
+
+.sideb-carousel > div > img{
+    width: 100%;
+    max-height: 100%;
+}
+
 footer{
     background: rgb(3,36,85);
     background: linear-gradient(180deg, rgba(3,36,85,1) 0%, rgba(4,14,26,1) 100%);
@@ -227,21 +304,23 @@ footer > section > div > h6{
     h1{
         top: 9%;
         font-size: 10rem;
+        height: auto;
     }
 
     .section-item > h1{
         font-size: 9.5rem;
-        line-height: 8rem;
+        line-height: 9rem;
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         position: absolute;
-        max-width: 80%;
+        max-width: 75%;
     }
 
     .section-item{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
+        margin: 100px auto;
     }
 
     .section-item > h2{
@@ -278,7 +357,6 @@ footer > section > div > h6{
     .carousel-inner > article{
         width: 100%;
         max-width: 50%;
-        height: 430px;
         background-color: #225A7A;
         border-radius: 15px;
     }
@@ -338,6 +416,14 @@ footer > section > div > h6{
         margin: 0 auto;
         width: 100%;
         padding: 0
+    }
+
+    h5{
+        width: 90%;
+    }
+
+    .sideb-paragraph{
+        width: 90% !important;
     }
 
     #footer-cta{
