@@ -1,0 +1,11 @@
+.section-item {
+    .hero-h1 {
+        @extend h1;
+        font-size: 5rem;
+        color: $black;
+        text-align: left;
+        font-weight: 400;
+        position: static;
+        width: 90%;
+    }
+}

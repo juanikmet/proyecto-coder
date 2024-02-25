@@ -1,0 +1,21 @@
+button{
+    border: none;
+    box-shadow: none;
+
+    span{
+        color: $dark-green !important;
+    }
+}
+
+.contact-form {
+    .form-button{
+        padding: 0;
+        width: auto;
+        border: none;
+        border-radius: none;
+        background-color: $white;
+        color: $dark-green;
+        text-decoration: underline;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin flex($direction, $content, $alignment){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $alignment;
+}
+
+.lg-portfolio-grid{
+    @include flex(row, space-between, center);
+}
