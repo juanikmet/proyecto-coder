@@ -4,96 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="If you need a designer, contact me and let's work together">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Juani Kmet - Nonesense that make sense</title>
 </head>
 <body>
     <!-- Comienza el header con el navbar y el logo -->
     <header>
-        <nav>
-            <a href="../index.html"><img src="../img/logo-juani.png" alt="I am Juani"></a>
-            <ul>
-                <li class="nav-item"><a href="aboutme.html" class="nav-link">About me</a></li>
-                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact me</a></li>
-                <li class="nav-item"><a href="sideb.html" class="nav-link">Side B</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg z-3">
+            <div class="container-fluid navbar-bg-black nav-width">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-juani.png" alt="I am Juani">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">Menu</span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 column-gap-4">
+                    <li class="nav-item"><a href="../pages/aboutme.html" class="nav-link">About me</a></li>
+                    <li class="nav-item" aria-current="page"><a href="../pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact me</a></li>
+                    <li class="nav-item"><a href="../pages/sideb.html" class="nav-link">Side B</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <!-- Comienza el main donde esta el contenido jerarquico de la pagina. Por decision de como se se visualizara, el h1 se decide insertarlo en el main y no en el header -->
-    <main>
-        <section class="container">
-            <h1>The freedom of the mind</h1>
-            <p class="paragraph">This part of my site is where I share experimental projects, music, photography and aspects of my life that aren’t work related but will help you see the real me.
-            </p>
-            <img src="../img/container-placeholder.png" alt=" " class="container-img">
+    <main class="container-fluid position-relative">
+        <section class="position-relative section-item">
+            <h1 class="hero-h1">The freedom of the mind</h1>
+            <img src="../img/sideb/hero.jpg" alt="Texto alternativo de prueba" class="container-img">
+            <div class="container-paragraph">
+                <p class="paragraph reverse-p">This part of my site is where I share experimental projects, music, photography and aspects of my life that aren’t work related but will help you see the real me.
+                </p>
+            </div>
         </section>
         
-        <section class="container">
+        <section class="position-relative section-item reverse-section">
+            <img src="../img/sideb/img-1.jpg" alt=" " class="container-img">
             <h5>I'm a nerd, I chew gum and smoke in your face</h5>
-            <p class="paragraph">Between 2016 and 2018 I’ve studied chemical engineering and realized I am very passionate about numbers, processes and chemistry. However, I took a pause from the career and focus on becoming a better designer and professional.<br>
+            <div class="container-paragraph">
+            <p class="paragraph sideb-paragraph">Between 2016 and 2018 I’ve studied chemical engineering and realized I am very passionate about numbers, processes and chemistry. However, I took a pause from the career and focus on becoming a better designer and professional.<br><br>
                 Someday I will resume my engineering studies just for fun and find out how to combine both disciplines.
-            </p>
-            <img src="../img/container-placeholder.png" alt=" " class="container-img">
+            </p></div>
         </section>
 
-        <section class="container">
+        <section class="position-relative section-item">
+            <img src="../img/sideb/img-2.jpg" alt=" " class="container-img">
             <h5>I play music since I was 4</h5>
-            <p class="paragraph">When I was younger I was fascinated by the idea of becoming a musician. Even though I never became a professional one, I like making music for myself and share it with friends and family.
+            <div class="container-paragraph">
+             <p class="paragraph  sideb-paragraph">When I was younger I was fascinated by the idea of becoming a musician. Even though I never became a professional one, I like making music for myself and share it with friends and family.
             </p>
-            <img src="../img/container-placeholder.png" alt=" " class="container-img">
-        </section>
-
-        <!-- Comienza el carousel de imagenes y enlaces hacia los proyectos -->
-        <section class="carousel">
-
-            <!-- Cada article es un elemento del portfolio estilizado como cards -->
-            <div>
-                <img src="../img/container-placeholder.png">
-            </div>
-            
-            <div>
-                <img src="../img/container-placeholder.png">
-            </div>
-
-            <div>
-                <img src="../img/container-placeholder.png">
-            </div>
-
-            <div>
-                <img src="../img/container-placeholder.png">
-            </div>
         </section>
 
     </main>
 
-    <!-- Comienza el footer con enlaces y cierre de la pagina -->
-    <footer>
-        <!-- Botoner del footer con enlaces especificos -->
-        <section id="footer-links">
-            <ul>
-                <li class="footer-item">Get in touch <a href="mailto:hola@juani.co" class="footer-link">hola@juani.co</a></li>
-                <li class="footer-item"><a href="https://linkedin.com/juanikmet" class="footer-link">Check my linkedin profile</a></li>
-                <li class="footer-item"><a href="pages/portfolio.html" class="footer-link">Watch my portfolio</a></li>
-                <li class="footer-item"><a href="#" class="footer-link">Get my resume</a></li>
-            </ul>    
-        </section>
+   <!-- Comienza el footer con enlaces y cierre de la pagina -->
+   <footer>
+    <!-- Botoner del footer con enlaces especificos -->
+    <section id="footer-links" class="">
+        <ul class="row">
+            <li class="footer-item col-md-3">Get in touch <a href="mailto:hola@juani.co" class="footer-link">hola@juani.co</a></li>
+            <li class="footer-item col-md-3"><a href="https://linkedin.com/juanikmet" class="footer-link">Check my linkedin profile</a></li>
+            <li class="footer-item col-md-3"><a href="pages/portfolio.html" class="footer-link">Watch my portfolio</a></li>
+            <li class="footer-item col-md-3"><a href="#" class="footer-link">Get my resume</a></li>
+        </ul>    
+    </section>
 
-        <!-- Section con el CTA del footer -->
-        <section>
-            <h4 id="footer-cta">Let’s work together</h4>
-        </section>
-
-        <!-- Apartado con informacion sobre disponibilidad y copyright -->
-        <aside>
-            <h6>Available for freelance work <br> September 2023</h6>
+    <!-- Section con el CTA del footer -->
+    <section class="footer-grid">
+        <h4 id="footer-cta">Let’s work together</h4>
+        <div>
+            <h6>Available for freelance work <br> June 2024</h6>
             <p>2023 © All rights reserved</p>
-        </aside>
+        </div>
+    </section>
+</footer>
 
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js" ></script>
+
 </body>
 </html>
